@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Day Studio</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="js/recuperar.js" defer></script>
+</head>
+<body class="login-page">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Day Studio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Voltar ao Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="login-container">
+        <div class="login-card">
+            <h2>Recuperar Senha</h2>
+            <p>Enviaremos um link para o seu e-mail.</p>
+            
+            <form id="recuperarForm">
+                <div class="input-group">
+                    <label for="email">Seu e-mail cadastrado</label>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
+                </div>
+                <button type="submit" class="btn-login">Enviar Recuperação</button>
+            </form>
+            
+            <div class="login-footer">
+                <a href="login.html">Voltar para o Login</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

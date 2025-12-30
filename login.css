@@ -1,0 +1,171 @@
+/* --- CONFIGURAÇÕES GERAIS --- */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* --- MENU FLUTUANTE (PÍLULA) --- */
+/* Funciona igual na Home, no Login e no Cadastro */
+header {
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border: 2px solid #000;
+    border-radius: 100px; /* Bordas de pílula */
+    padding: 12px 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* --- ESTRUTURA PARA TELAS DE LOGIN / CADASTRO / RECUPERAR --- */
+/* Isso centraliza o card no meio da tela sem colar no menu */
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fcfcfc;
+}
+
+.login-card {
+    background: white;
+    width: 90%;
+    max-width: 420px;
+    padding: 50px 40px;
+    border: 2px solid #000;
+    border-radius: 45px; /* Bordas bem redondas como você pediu */
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.login-card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.login-card p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Campos de entrada arredondados */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #000;
+}
+
+/* Botão Estilo Pílula */
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    transform: scale(1.02);
+}
+
+/* --- ESTILO PARA A HOME (INDEX.HTML) --- */
+.hero {
+    padding: 160px 10% 80px; /* Espaço para não bater no menu */
+    text-align: left;
+}
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+
+.about {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.category-section {
+    padding: 80px 10%;
+}
+
+.categories {
+    display: flex;
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.category {
+    padding: 12px 25px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.category.active {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
